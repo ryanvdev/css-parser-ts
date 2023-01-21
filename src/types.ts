@@ -1,13 +1,13 @@
-import StrKits from "strkits";
+import StrKits from 'strkits';
 
 export interface Declaration {
     property: string;
     value: string;
-};
+}
 
 export interface DeclarationBlock {
-    [property:string]: string;
-};
+    [property: string]: string;
+}
 
 export interface RuleSet {
     type: 'rule-set';
@@ -21,7 +21,7 @@ export interface RegularAtRule {
     rule: string;
 }
 
-export interface DescribesAtRule{
+export interface DescribesAtRule {
     type: 'describes-at-rule';
     identifier: string;
     rule: string;
@@ -32,14 +32,25 @@ export interface NestedAtRule {
     type: 'nested-at-rule';
     identifier: string;
     rule: string;
-    styleSheet: StyleSheet[];
+    styleSheetList: StyleSheet[];
 }
+
+export type AtRule = RegularAtRule | DescribesAtRule | NestedAtRule;
 
 export type StyleSheet = RuleSet | RegularAtRule | DescribesAtRule | NestedAtRule;
 
 // ==========================
 
-export interface ParseOptions{
-    classOrIDTransformFn?: (oldClassOrID:string) => string;
-    propertyTransformFn?: (oldPropertyName:string) => string;
+export interface ParseOptions {
+    classOrIDTransformFn?: (oldClassOrID: string) => string;
+    propertyTransformFn?: (oldPropertyName: string) => string;
+}
+
+export interface ToStringOptions {
+    /**
+     * @default false
+     */
+    pretty?: boolean;
+    tabWidth?: number;
+    printWidth?: number;
 }
