@@ -1,6 +1,5 @@
-import StrKits from 'strkits';
 import { StyleSheet } from '../types';
-import { Range } from './local-types';
+
 
 export function mkResult<T>(callbackFn: () => T): T {
     return callbackFn();

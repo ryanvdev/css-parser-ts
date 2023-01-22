@@ -1,0 +1,242 @@
+[
+    {
+        "type": "rule-set",
+        "selectors": [
+            ".header_new_"
+        ],
+        "declarationBlock": {
+            "display": "block",
+            "backgroundColor": "blue",
+            "color": "aqua",
+            "--variable": "blue"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            ".header_new_ > a"
+        ],
+        "declarationBlock": {
+            "display": "block",
+            "borderRadius": "thin solid black",
+            "backgroundImage": "url(\"abc.com\")",
+            "--variable": "blue"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            ".header_new_ > div"
+        ],
+        "declarationBlock": {
+            "display": "block",
+            "borderRadius": "thin solid black",
+            "backgroundImage": "url(\"abc.com\")"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            ".header_new_ div"
+        ],
+        "declarationBlock": {
+            "width": "100px",
+            "height": "100px",
+            "backgroundColor": "red",
+            "position": "relative",
+            "animationName": "example",
+            "animationDuration": "4s",
+            "animationIterationCount": "2",
+            "animationDirection": "alternate-reverse"
+        }
+    },
+    {
+        "type": "nested-at-rule",
+        "identifier": "keyframes",
+        "rule": "example",
+        "styleSheetList": [
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "0%"
+                ],
+                "declarationBlock": {
+                    "backgroundColor": "red",
+                    "left": "0px",
+                    "top": "0px"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "25%"
+                ],
+                "declarationBlock": {
+                    "backgroundColor": "yellow",
+                    "left": "200px",
+                    "top": "0px"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "50%"
+                ],
+                "declarationBlock": {
+                    "backgroundColor": "blue",
+                    "left": "200px",
+                    "top": "200px"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "75%"
+                ],
+                "declarationBlock": {
+                    "backgroundColor": "green",
+                    "left": "0px",
+                    "top": "200px"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "100%"
+                ],
+                "declarationBlock": {
+                    "backgroundColor": "red",
+                    "left": "0px",
+                    "top": "0px"
+                }
+            }
+        ]
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_"
+        ],
+        "declarationBlock": {}
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_ > a",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ > a"
+        ],
+        "declarationBlock": {
+            "display": "block",
+            "borderRadius": "thin solid black",
+            "backgroundImage": "url(\"abc.com\")"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_ ::-webkit-scrollbar",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar"
+        ],
+        "declarationBlock": {
+            "width": "10px"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_ ::-webkit-scrollbar-track",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-track"
+        ],
+        "declarationBlock": {
+            "background": "#f1f1f1"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_ ::-webkit-scrollbar-thumb",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-thumb"
+        ],
+        "declarationBlock": {
+            "background": "#888"
+        }
+    },
+    {
+        "type": "rule-set",
+        "selectors": [
+            "#header_new_.header_new_ ::-webkit-scrollbar-thumb:hover",
+            ".f_new_[href=\"https://exam,le.org?a=a .b .c,e\"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-thumb:hover"
+        ],
+        "declarationBlock": {
+            "background": "#555"
+        }
+    },
+    {
+        "type": "nested-at-rule",
+        "identifier": "keyframes",
+        "rule": "spin",
+        "styleSheetList": [
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "from"
+                ],
+                "declarationBlock": {
+                    "transform": "rotate(0deg)"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    "to"
+                ],
+                "declarationBlock": {
+                    "transform": "rotate(360deg)"
+                }
+            }
+        ]
+    },
+    {
+        "type": "nested-at-rule",
+        "identifier": "media",
+        "rule": "screen and (max-width: 100px)",
+        "styleSheetList": [
+            {
+                "type": "rule-set",
+                "selectors": [
+                    ".test-media_new_"
+                ],
+                "declarationBlock": {
+                    "display": "block",
+                    "backgroundColor": "blue"
+                }
+            }
+        ]
+    },
+    {
+        "type": "nested-at-rule",
+        "identifier": "layer",
+        "rule": "utilities",
+        "styleSheetList": [
+            {
+                "type": "rule-set",
+                "selectors": [
+                    ".padding-sm_new_"
+                ],
+                "declarationBlock": {
+                    "padding": "0.5rem"
+                }
+            },
+            {
+                "type": "rule-set",
+                "selectors": [
+                    ".padding-lg_new_"
+                ],
+                "declarationBlock": {
+                    "padding": "0.8rem"
+                }
+            }
+        ]
+    }
+]

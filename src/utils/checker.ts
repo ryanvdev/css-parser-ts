@@ -1,5 +1,5 @@
 const listRegularAtRule = Object.freeze(['charset', 'import', 'namespace']);
-const listNestedAtRule = Object.freeze(['media', 'supports', 'document', 'keyframes']);
+const listNestedAtRule = Object.freeze(['media', 'supports', 'document', 'keyframes', 'layer']);
 
 export function typeOfAtRule(identifier: string) {
     if (listRegularAtRule.includes(identifier)) return 'regular';

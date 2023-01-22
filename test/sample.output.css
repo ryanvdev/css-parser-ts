@@ -1,0 +1,98 @@
+.header_new_ {
+    display: block;
+    background-color: blue;
+    color: aqua;
+    --variable: blue;
+}
+.header_new_ > a {
+    display: block;
+    border-radius: thin solid black;
+    background-image: url("abc.com");
+    --variable: blue;
+}
+.header_new_ > div {
+    display: block;
+    border-radius: thin solid black;
+    background-image: url("abc.com");
+}
+.header_new_ div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+#header_new_.header_new_ > a, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ > a
+{
+    display: block;
+    border-radius: thin solid black;
+    background-image: url("abc.com");
+}
+#header_new_.header_new_ ::-webkit-scrollbar, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar
+{
+    width: 10px;
+}
+#header_new_.header_new_ ::-webkit-scrollbar-track, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-track
+{
+    background: #f1f1f1;
+}
+#header_new_.header_new_ ::-webkit-scrollbar-thumb, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-thumb
+{
+    background: #888;
+}
+#header_new_.header_new_ ::-webkit-scrollbar-thumb:hover, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 100px) {
+    .test-media_new_ {
+        display: block;
+        background-color: blue;
+    }
+}
+@layer utilities {
+    .padding-sm_new_ {
+        padding: 0.5rem;
+    }
+    .padding-lg_new_ {
+        padding: 0.8rem;
+    }
+}

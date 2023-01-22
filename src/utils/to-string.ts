@@ -1,5 +1,6 @@
 import { transformToKebabCase } from 'strkits';
 import { AtRule, DeclarationBlock, RuleSet, StyleSheet, ToStringOptions } from '../types';
+import { loadFormatFn } from './loader';
 
 function declarationBlockToString(subject: DeclarationBlock): string {
     const aggregate: string[] = [];
@@ -95,9 +96,16 @@ export function toString(subject: StyleSheet[], options?: ToStringOptions): stri
         return strCss;
     }
 
-    // if(options.pretty === true) {
-    //     pretti strCss;
-    // }
+    if(options.pretty === true) {
+        const formatFn = loadFormatFn();
+
+        strCss = formatFn(strCss, {
+            parser: 'css',
+            semi: true,
+            tabWidth: options.tabWidth,
+            printWidth: options.printWidth,
+        });
+    }
 
     return strCss;
 }
