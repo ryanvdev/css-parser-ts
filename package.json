@@ -2,7 +2,8 @@
   "name": "css-kits",
   "version": "0.0.0",
   "description": "Parse css to javascript object. Support change class and id",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "rmdir /S /Q lib & tsc",
     "dev": "nodemon test/index.ts",
