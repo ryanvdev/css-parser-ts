@@ -48,9 +48,16 @@ export interface ParseOptions {
 
 export interface ToStringOptions {
     /**
+     * If you want to use this option, you need to install `prettier`.
      * @default false
      */
     pretty?: boolean;
+    /**
+     * Required: pretty = true
+     */
     tabWidth?: number;
+    /**
+     * Required: pretty = true
+     */
     printWidth?: number;
 }

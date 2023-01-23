@@ -1,104 +1,113 @@
 .header {
-  display: block;
-  background-color: blue;
-  color: aqua;
-  --variable: blue;
+    display: block;
+    background-color: blue;
+    color: aqua;
+    --variable: blue;
 }
 .header > a {
-  /* this is a comment 3 */
-  display: block;
-  border-radius: thin solid black;
-  /* this is a comment 2 */
-  background-image: url("abc.com");
-  --variable: blue;
+    /* this is a comment 3 */
+    display: block;
+    border-radius: thin solid black;
+    /* this is a comment 2 */
+    background-image: url('abc.com');
+    --variable: blue;
 }
 .header > div {
-  display: block;
-  border-radius: thin solid black;
-  background-image: url("abc.com");
+    display: block;
+    border-radius: thin solid black;
+    background-image: url('abc.com');
 }
 .header div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 2;
-  animation-direction: alternate-reverse;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
 }
 @keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
 
 /* this is a comment 3 */
-#header.header, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b {
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
+#header.header, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b
+{
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
 }
-#header.header > a, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b > a {
-  display: block;
-  border-radius: thin solid black;
-  background-image: url("abc.com");
+#header.header > a, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b > a
+{
+    display: block;
+    border-radius: thin solid black;
+    background-image: url('abc.com');
 }
-#header.header ::-webkit-scrollbar, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar {
-  width: 10px;
+#header.header ::-webkit-scrollbar, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar
+{
+    width: 10px;
 }
-#header.header ::-webkit-scrollbar-track, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+#header.header ::-webkit-scrollbar-track, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-track
+{
+    background: #f1f1f1;
 }
-#header.header ::-webkit-scrollbar-thumb, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-thumb {
-  background: #888;
+#header.header ::-webkit-scrollbar-thumb, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-thumb
+{
+    background: #888;
 }
-#header.header ::-webkit-scrollbar-thumb:hover, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+#header.header ::-webkit-scrollbar-thumb:hover, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b ::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 @media screen and (max-width: 100px) {
-  .test-media {
-    display: block;
-    background-color: blue;
-  }
+    .test-media {
+        display: block;
+        background-color: blue;
+        border-top: thin solid black;
+        border-left: 2px dotted blue;
+        border-bottom: 3px solid black;
+    }
 }
 @layer utilities {
-  .padding-sm {
-    padding: 0.5rem;
-  }
-  .padding-lg {
-    padding: 0.8rem;
-  }
+    .padding-sm {
+        padding: 0.5rem;
+    }
+    .padding-lg {
+        padding: 0.8rem;
+    }
 }

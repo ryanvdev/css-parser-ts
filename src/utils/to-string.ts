@@ -96,7 +96,7 @@ export function toString(subject: StyleSheet[], options?: ToStringOptions): stri
         return strCss;
     }
 
-    if(options.pretty === true) {
+    if (options.pretty === true) {
         const formatFn = loadFormatFn();
 
         strCss = formatFn(strCss, {

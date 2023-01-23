@@ -5,7 +5,7 @@
 
     --variable: blue;
 
-    > a{ 
+    > a {
         /* this is a comment 3 */
         display: block;
         border-radius: thin solid black;
@@ -15,7 +15,7 @@
         --variable: blue;
     }
 
-    > div{
+    > div {
         display: block;
         border-radius: thin solid black;
         background-image: url('abc.com');
@@ -29,22 +29,43 @@
         animation-name: example;
         animation-duration: 4s;
         animation-iteration-count: 2;
-        animation-direction: alternate-reverse;  
-      }
-      
+        animation-direction: alternate-reverse;
+    }
+
     @keyframes example {
-        0%   {background-color:red; left:0px; top:0px;}
-        25%  {background-color:yellow; left:200px; top:0px;}
-        50%  {background-color:blue; left:200px; top:200px;}
-        75%  {background-color:green; left:0px; top:200px;}
-        100% {background-color:red; left:0px; top:0px;}
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
     }
 }
 
 /* this is a comment 3 */
 
-#header.header, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b {
-    > a{
+#header.header, .f[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a, .b) + #cc.a.b
+{
+    > a {
         display: block;
         border-radius: thin solid black;
         background-image: url('abc.com');
@@ -54,45 +75,47 @@
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     /* Track */
     ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
     }
-    
+
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
     }
-    
+
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #555;
     }
 }
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 @media screen and (max-width: 100px) {
-    .test-media{
+    .test-media {
         display: block;
         background-color: blue;
+        border-top: thin solid black;
+        border-left: 2px dotted blue;
+        border-bottom: 3px solid black;
     }
 }
 
-
 @layer utilities {
     .padding-sm {
-      padding: 0.5rem;
+        padding: 0.5rem;
     }
-  
+
     .padding-lg {
-      padding: 0.8rem;
+        padding: 0.8rem;
     }
 }

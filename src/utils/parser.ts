@@ -58,7 +58,7 @@ function parseDeclarationBlock(
             throw new SyntaxError(item);
         }
 
-        if (!property.startsWith('--') && transformFunc) {
+        if (transformFunc && property.startsWith('--') === false) {
             property = transformFunc(property);
         }
 

@@ -1,7 +1,7 @@
 {
-  "name": "css-parser-ts",
+  "name": "css-kits",
   "version": "0.0.0",
-  "description": "Css parser support for typescript",
+  "description": "Parse css to javascript object. Support change class and id",
   "main": "index.js",
   "scripts": {
     "build": "rmdir /S /Q lib & tsc",
@@ -15,7 +15,10 @@
     "url": "git+https://github.com/tuannguyen7326/css-parser-ts.git"
   },
   "keywords": [
-    "css-parser"
+    "css-parser",
+    "css-kits",
+    "css-toolkit",
+    "css-to-js"
   ],
   "author": "Tuan Nguyen",
   "license": "MIT",

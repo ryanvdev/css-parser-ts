@@ -1,6 +1,5 @@
 import { StyleSheet } from '../types';
 
-
 export function mkResult<T>(callbackFn: () => T): T {
     return callbackFn();
 }
