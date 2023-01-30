@@ -1,6 +1,6 @@
 {
   "name": "css-kits",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parse css to javascript object. Support change class and id",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
