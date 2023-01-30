@@ -7,13 +7,13 @@
 .header_new_ > a {
     display: block;
     border-radius: thin solid black;
-    background-image: url('abc.com');
+    background-image: url("abc.com");
     --variable: blue;
 }
 .header_new_ > div {
     display: block;
     border-radius: thin solid black;
-    background-image: url('abc.com');
+    background-image: url("abc.com");
 }
 .header_new_ div {
     width: 100px;
@@ -56,7 +56,7 @@
 {
     display: block;
     border-radius: thin solid black;
-    background-image: url('abc.com');
+    background-image: url("abc.com");
 }
 #header_new_.header_new_ ::-webkit-scrollbar, .f_new_[href="https://exam,le.org?a=a .b .c,e"]:has(div, .a_new_, .b_new_) + #cc_new_.a_new_.b_new_ ::-webkit-scrollbar
 {

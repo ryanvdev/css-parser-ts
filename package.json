@@ -1,6 +1,6 @@
 {
   "name": "css-kits",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse css to javascript object. Support change class and id",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -29,11 +29,11 @@
   "homepage": "https://github.com/tuannguyen7326/css-parser-ts#readme",
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "@types/prettier": "^2.7.2",
     "prettier": "^2.8.3",
     "sass": "^1.57.1"
   },
   "dependencies": {
-    "@types/prettier": "^2.7.2",
-    "strkits": "^1.1.0"
+    "strkits": "^1.2.0"
   }
 }

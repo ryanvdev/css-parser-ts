@@ -53,8 +53,10 @@ export function removeAllComments(subject: string): string {
 }
 
 export function standardizeStyleSheet(subject: string): string {
+    const lineBreakChar = StrKits.getLineBreakChar(subject);
+
     return removeAllComments(subject)
-        .split('\n')
+        .split(lineBreakChar)
         .map((line) => line.trim())
         .filter((line) => line.length > 0)
         .join(' ');

@@ -1,7 +1,9 @@
 [
     {
         "type": "rule-set",
-        "selectors": [".header_new_"],
+        "selectors": [
+            ".header_new_"
+        ],
         "declarationBlock": {
             "display": "block",
             "backgroundColor": "blue",
@@ -11,7 +13,9 @@
     },
     {
         "type": "rule-set",
-        "selectors": [".header_new_ > a"],
+        "selectors": [
+            ".header_new_ > a"
+        ],
         "declarationBlock": {
             "display": "block",
             "borderRadius": "thin solid black",
@@ -21,7 +25,9 @@
     },
     {
         "type": "rule-set",
-        "selectors": [".header_new_ > div"],
+        "selectors": [
+            ".header_new_ > div"
+        ],
         "declarationBlock": {
             "display": "block",
             "borderRadius": "thin solid black",
@@ -30,7 +36,9 @@
     },
     {
         "type": "rule-set",
-        "selectors": [".header_new_ div"],
+        "selectors": [
+            ".header_new_ div"
+        ],
         "declarationBlock": {
             "width": "100px",
             "height": "100px",
@@ -49,7 +57,9 @@
         "styleSheetList": [
             {
                 "type": "rule-set",
-                "selectors": ["0%"],
+                "selectors": [
+                    "0%"
+                ],
                 "declarationBlock": {
                     "backgroundColor": "red",
                     "left": "0px",
@@ -58,7 +68,9 @@
             },
             {
                 "type": "rule-set",
-                "selectors": ["25%"],
+                "selectors": [
+                    "25%"
+                ],
                 "declarationBlock": {
                     "backgroundColor": "yellow",
                     "left": "200px",
@@ -67,7 +79,9 @@
             },
             {
                 "type": "rule-set",
-                "selectors": ["50%"],
+                "selectors": [
+                    "50%"
+                ],
                 "declarationBlock": {
                     "backgroundColor": "blue",
                     "left": "200px",
@@ -76,7 +90,9 @@
             },
             {
                 "type": "rule-set",
-                "selectors": ["75%"],
+                "selectors": [
+                    "75%"
+                ],
                 "declarationBlock": {
                     "backgroundColor": "green",
                     "left": "0px",
@@ -85,7 +101,9 @@
             },
             {
                 "type": "rule-set",
-                "selectors": ["100%"],
+                "selectors": [
+                    "100%"
+                ],
                 "declarationBlock": {
                     "backgroundColor": "red",
                     "left": "0px",
@@ -161,14 +179,18 @@
         "styleSheetList": [
             {
                 "type": "rule-set",
-                "selectors": ["from"],
+                "selectors": [
+                    "from"
+                ],
                 "declarationBlock": {
                     "transform": "rotate(0deg)"
                 }
             },
             {
                 "type": "rule-set",
-                "selectors": ["to"],
+                "selectors": [
+                    "to"
+                ],
                 "declarationBlock": {
                     "transform": "rotate(360deg)"
                 }
@@ -182,7 +204,9 @@
         "styleSheetList": [
             {
                 "type": "rule-set",
-                "selectors": [".test-media_new_"],
+                "selectors": [
+                    ".test-media_new_"
+                ],
                 "declarationBlock": {
                     "display": "block",
                     "backgroundColor": "blue",
@@ -200,14 +224,18 @@
         "styleSheetList": [
             {
                 "type": "rule-set",
-                "selectors": [".padding-sm_new_"],
+                "selectors": [
+                    ".padding-sm_new_"
+                ],
                 "declarationBlock": {
                     "padding": "0.5rem"
                 }
             },
             {
                 "type": "rule-set",
-                "selectors": [".padding-lg_new_"],
+                "selectors": [
+                    ".padding-lg_new_"
+                ],
                 "declarationBlock": {
                     "padding": "0.8rem"
                 }
